@@ -11,7 +11,7 @@ namespace Obqvi_API.DB.Models
         [MaxLength(100)]
         public string? Username { get; set; }
 
-        [MaxLength(200)]
+        [MaxLength(300)]
         public string? Password { get; set; }
 
         [MaxLength(100)]
