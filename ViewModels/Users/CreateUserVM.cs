@@ -1,6 +1,6 @@
 ﻿namespace Obqvi_API.ViewModels.Users
 {
-    public class CreateNewUserVM
+    public class CreateUserVM
     {
         public string? UserName { get; set; }
 

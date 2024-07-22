@@ -16,8 +16,16 @@ namespace Obqvi_API.Controllers
             _db = db;
         }
 
-        [HttpPost("CreateNewUser")]
-        public async Task<IActionResult> CreateNewUser([FromBody] CreateNewUserVM user)
+        public async Task<IActionResult> Login([FromBody] LoginUserVM user)
+        {
+            if (user == null)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpPost("Create")]
+        public async Task<IActionResult> Create([FromBody] CreateUserVM user)
         {
             _db.Users.Add(new DB.Models.User 
             { 
