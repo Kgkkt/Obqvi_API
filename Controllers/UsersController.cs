@@ -25,6 +25,7 @@ namespace Obqvi_API.Controllers
                 Password = user.Password,
                 Mail = user.Email
             });
+            //test src
 
             await _db.SaveChangesAsync();
 
